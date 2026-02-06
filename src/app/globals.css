@@ -61,3 +61,12 @@ h1, h2, h3 {
   font-family: var(--font-display);
   letter-spacing: var(--tracking-display);
 }
+
+/* Header scroll animations */
+.header-visible {
+  transform: translateY(0);
+}
+
+.header-hidden {
+  transform: translateY(-100%);
+}

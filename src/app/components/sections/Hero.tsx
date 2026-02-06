@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="flex items-center">
+    <section className="flex items-center pt-20 lg:pt-24 min-h-screen">
 
       <div className="grid lg:grid-cols-[45%_55%] items-center w-full">
 

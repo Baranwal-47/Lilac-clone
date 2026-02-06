@@ -7,6 +7,7 @@ import Specialties from "./components/sections/Specialties";
 import About from "./components/sections/About";
 import FAQ from "./components/sections/FAQ";
 import CTA from "./components/sections/CTA";
+import Background from "./components/sections/Background";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Reassurance />
       <About />
       <FAQ />
+      <Background />
       <CTA />
       <Footer />
     </div>
