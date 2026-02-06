@@ -57,15 +57,22 @@ export default function Reassurance() {
         </div>
 
         {/* BOTTOM CTA STRIP */}
-        <div className="
+        <button className="
           border-t border-neutral-500
           py-6
           text-center
           text-sm
           tracking-wider
+          w-full
+          bg-transparent
+          text-foreground
+          hover:bg-foreground/5
+          transition-all
+          duration-300
+          cursor-pointer
         ">
           WORK WITH ME →
-        </div>
+        </button>
 
       </div>
 
