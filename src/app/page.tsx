@@ -1,11 +1,25 @@
 import Header from "./components/layout/Header";
+import Footer from "./components/layout/Footer";
 import Hero from "./components/sections/Hero";
+import Intro from "./components/sections/Intro";
+import Reassurance from "./components/sections/Reassurance";
+import Specialties from "./components/sections/Specialties";
+import About from "./components/sections/About";
+import FAQ from "./components/sections/FAQ";
+import CTA from "./components/sections/CTA";
 
 export default function Home() {
   return (
-    <main>
+    <div className="min-h-screen bg-background">
       <Header />
       <Hero />
-    </main>
+      <Intro />
+      <Specialties />
+      <Reassurance />
+      <About />
+      <FAQ />
+      <CTA />
+      <Footer />
+    </div>
   );
 }
