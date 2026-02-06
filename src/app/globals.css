@@ -1,42 +1,62 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import "tailwindcss";
+
+@theme {
+
+  /* 🌿 COLOR SYSTEM */
+  /* pulled visually from screenshot palette */
+
+  --color-background: #f5f2ee;
+  --color-foreground: #24331f;
+  --color-muted: #6f7768;
+  --color-accent: #dcd4e8;
+
+  /* Typography colors mapped */
+  --color-text: var(--color-foreground);
+
+  /* ✍️ FONT TOKENS (wired from Next layout) */
+  --font-body: var(--font-body);
+  --font-display: var(--font-display);
+
+  /* 📏 SPACING SYSTEM */
+  --spacing-section: 7rem;
+  --spacing-container: 2rem;
+
+  /* 🔵 RADIUS */
+  --radius-soft: 1.5rem;
+
+  /* 🧱 CONTENT WIDTH */
+  --max-width-content: 1180px;
+
+  /* 🧭 TYPE SCALE (editorial tuned) */
+
+  --text-hero: clamp(3rem, 5vw, 4.25rem);
+  --text-h1: 2.5rem;
+  --text-h2: 1.75rem;
+
+  --text-body-lg: 1.125rem;
+  --text-body: 1rem;
+
+  /* Line heights */
+  --leading-tight: 1.1;
+  --leading-body: 1.65;
+
+  /* Tracking */
+  --tracking-display: -0.01em;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+
+/* =====================================================
+   BASE STYLING
+   (sets foundation so components look right instantly)
+   ===================================================== */
+
+html, body {
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+h1, h2, h3 {
+  font-family: var(--font-display);
+  letter-spacing: var(--tracking-display);
 }
